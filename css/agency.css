@@ -13,6 +13,10 @@ body {
     color: #777;
 }
 
+.text-light {
+    color: #A0A0A0;
+}
+
 .text-primary {
     /* color: #0099FF; */
     color: #0099FF;
