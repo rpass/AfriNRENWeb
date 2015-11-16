@@ -38,30 +38,24 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
 }
 
-<<<<<<< HEAD
+
 .goals-section {
-=======
-.about-section {
->>>>>>> origin/master
+
     height: 100%;
     padding-top: 150px;
     text-align: justify;
     background: #eee;
 }
 
-<<<<<<< HEAD
+
 .approach-section {
     height: 100%;
-=======
-.services-section {
-    /*height: 100%;*/
->>>>>>> origin/master
     padding-top: 150px;
     text-align: justify;
     background: #fff;
 }
 
-<<<<<<< HEAD
+
 .visualisation-section {
     height: 100%;
     padding-top: 150px;
@@ -81,11 +75,5 @@ of those sections to manage the look and feel of the site. */
     padding-top: 150px;
     text-align: justify;
     background: #eee;
-=======
-.contact-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #eee;
->>>>>>> origin/master
+
 }
