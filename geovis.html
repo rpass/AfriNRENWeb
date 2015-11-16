@@ -173,16 +173,44 @@
     <section id="vis2" class="visualisation-section">
         <div class="container">
             <div class="row">
-                <h2>Final Visualisation Design</h2>
-                <div class="col-xs-6 .col-md-4">
+                <div class="col-xs-6">
+                                    <h2>Final Visualisation Design</h2>
 
+                <p>Figure 3 shows the final visualisation design based on information received in both the first and second iteration. In addition to the Google Maps Javascript API, the DataTable, javascript table plug-in for jQuery was used. </p>
+
+                <p>Several dimensions of data are displayed in the visualisation including the location of Internet Exchange Points, physical fibre cables and the traceroute information collected. IXP data was obtained from Packet Clearing House's <a href="https://prefix.pch.net/applications/ixpdir/menu_download.php">Internet exchange point directory</a> and fibre data from <a href="https://manypossibilities.net/afterfibre/"> Steve Song</a> at <a href="https://manypossibilities.net/afterfibre/">afterfibre.net</a>. The visualisation allows for viewing multiple traceroutes sent from various vantage points to be seen on the map all at once</p>
+
+                    <p>The left-hand side of the screen shows an interactive map which supports panning and zooming using the mouse. On the right-hand side of the screen, a table with contextual information related to the map can be seen. The search bar above the table on the right-hand side of the screen can be used to perform searches on the table for any column. Clicking on a particular row in the table, allows the map to zoom in to the location of the related icon on the map.</p>
+
+                <h4>Map Layers and Symbols</h4>
+                <p>Below the map, there are several checkboxes which can be used to toggle various map layers on and off - either displaying or hiding icons and layers on the map.</p>
+                <ul>
+                 <li>Destination IP Address - where a traceroute is sent to (coloured circle)</li>
+                <li>Probe - where a traceroute is sent from (<font color="blue">blue</font> diamond)</li>
+                    <li>Internet Exchange Point (<font color="DeepPink">pink</font> triangle)</li>
+                    <li>Traceroute Hops -  (<font color="SpringGreen">bright</font> green circle)</li>
+                   <li> Terrestrial Fibre - Fibre Optic Cables over land (<font color="green">green</font> lines)   </li>
+                </ul>
+
+                <p>By default, all destination IPs are shown on the map. With the exception of hops, mousing over each symbol displays information about that particular icon such as the name, ASN and IP Address.</p>
+                <h4>Summary of Interactions</h4>
+                <ul>
+                    <li><b>To view all traceroute measurements to a particular destination (Figure 4):</b> 
+                    Click on a chosen destination IP icon on the map. This will display traceroute measurements from all available probes to that particular destination. All probes, the destination IP and intermediate hops are shown on the map. A list of all the probes and related information (Probe ID, ASN, NREN/organisation name) is then shown in the table.</li>
+                    <li><b>To view a single traceroute measurement from a particular probe to a particular destination (Figure 5):</b> Click a chosen probe icon on the map. This will display the traceroute from the chosen probe to the chosen destination. The traceroute information is then shown in the table (Hop Number, Country, IP Address, RTT).</li>
+                    <li><b>To select a different IP address:</b> Click the same destination IP icon you previously selected. All destination IP addresses will be visible on the map again.</li>
+                </ul>
+     
 
                 </div>
-                <div class="col-xs-6 .col-md-4">
-
-                </div>
-                <div class="col-xs-6 .col-md-4">
-
+                <div class="col-xs-6">
+                    <img src="img/geovis/screen1.png" height="300" width="450" style="margin-top:60px"></img>
+                    <p style="text-align:center"><b>Figure 3: Screenshot of Initial Interactive Prototype</b></p>
+ <img src="img/geovis/screen2.png" height="300" width="450" style="margin-top:10px"></img>
+                    <p style="text-align:center"><b>Figure 4: Screenshot of Initial Interactive Prototype</b></p>
+               
+ <img src="img/geovis/screen3.png" height="300" width="450" style="margin-top:10px"></img>
+                    <p style="text-align:center"><b>Figure 5: Screenshot of Initial Interactive Prototype</b></p>
                 </div>
             </div>
         </div>
