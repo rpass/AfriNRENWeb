@@ -52,13 +52,16 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#goals">Project Goals</a>
+                        <a class="page-scroll" href="#goals">Research Question</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#approach">Approach</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#evaluation">Evaluation</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#visualisation">Final Visualisation Design</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#results">Results</a>
@@ -77,52 +80,90 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Geospatial Visualisation</h1>
-                     <p> Previous research on National Research and Education Networks (NRENs) in Africa has shown high latency in traffic exchanged between networks, with 75% of this traffic taking circuitous routes through Europe. Possible reasons for this high latency is lack of peering relationships between NRENs, which can be solved by making use of Internet Exchange Points (IXPs). </p>  
-                     <p>
-                        As location is an important aspect in determining this information, a geospatial visualisation has been identified as being appropriate. In relation to computer networks, a geospatial visualisation is one in, which nodes are represented in respect to physical locations. This differs from non-geospatial visualisations where nodes are independent of physical locations 
+                    <h2>Background and Context</h2>
+                     <p> Previous research on National Research and Education Networks (NRENs) in Africa has shown high latency in traffic exchanged between networks, with 75% of this traffic taking circuitous routes through Europe. Possible reasons for this high latency is lack of peering relationships between NRENs. Peering is when different Internet Service Providers (ISPs) exchange data between their networks at an Internet Exhange Point (IXP).  </p> 
+
+                     <p>Despite an increase in the establishment of national IXPs in Africa, high latencies still occur indicating a need for further research into the network topology of NRENs. The collection of traceroute data for logical topology discovery is therefore necessary in order to understand the underlying topology of African NRENs. Traceroute is a network diagnostic tool used to determine end-to-end paths of network packets where round trip times are relayed at each router hop. </p>
+
+                     <p>For this reason, a visualisation would be useful in identifying possible routes that network traffic traverses between NRENs and aid in the peering decision-making process.
+                        As location is an important aspect in determining this information, a geospatial visualisation has been identified as being appropriate. A geospatial visualisation is one in which nodes are represented in respect to physical locations. 
                     </p>
                     <p>
-                    We present the creation and design of a geospatial visualisation showing the network structure of African NRENs using traceroute data for network topology discovery. Such a visualisation may aid in the decision-making process of identifying the placement of Internet Exchange Points. 
+                    We present the creation and design of a geospatial visualisation showing the network structure of African NRENs using traceroute data for network topology discovery. 
 
                     </p>   
 
 
 
-                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
-                </div>
+<!--                     <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+ -->                </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="goals" class="about-section">
+    <section id="goals" class="goals-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Project Goals and Research Question</h1>
-                    <h4>The following research question has been formulated for the project: can a geospatial visualisation effectively and accurately communicate the network topology of African NRENs, allowing users to identify networks, where they connect and the routes this traffic may traverse? </h4>
+                    <h2>Research Question</h2>
+                    <h4 class="subheading">The following research question has been formulated for the project:  </h4>
+                    Can a geospatial visualisation effectively and accurately communicate the network topology of African NRENs, allowing users to:
+                    <li> identify networks (physical and logical), </li> 
+                    <li> where they connect (location of source, destination and intermediate hops) </li> 
+                    <li> and potential routes of traffic traversal (traceroute paths at a country and continent level)? </li>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="approach" class="services-section">
+    <section id="approach" class="approach-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <h2>Approach</h2>
+                    <p>A User-Centred Design (UCD) approach was used to develop the visualisation. UCD describes a process where the user is involved throughout the design cycle to determine user needs and goals. In context of a visualisation, this would be gaining an understanding of the initial visual queries (an information need addressed by a visualisation) that potential users may have. </p>
+
+                     <p>Users of the visualisation are envisaged to be NREN managers and network engineers of related tertiary education institutions of the UbuntuNet Alliance.  </p>
+
+                    <p>The design process consists of three phases (Figure 1): 
+                        <ol> 
+                            <li>the early envisioning phase</li>
+                            <li>the global specification phase</li> 
+                            <li>the detailed specification phase</li>
+                            </ol> 
+
+                            In each phase, analysis, design and evaluation were conducted. </p>
+
+                        <p>Iteration of the design cycle is concluded once a specific criteria has been reached, such as if users are able to adequately answer visual queries  </p>
+                </div>
+                 <div class="col-xs-6">
+                    <img src="img/geovis/ucd.png" height="300" width="450"></img>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="visualisation" class="visualisation-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Approach</h1>
+                    <h2>Final Visualisation Design</h2>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="evaluation" class="contact-section">
+    <section id="evaluation" class="evaluation-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Evaluation</h1>
+                    <h2>Evaluation</h2>
+                    <p>We evaluated the effectiveness and accuracy of the visualisation having conducted usability tests and determined its ability to convey physical and logical topology.  
+ </p>
                 </div>
             </div>
         </div>
@@ -133,7 +174,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Results</h1>
+                    <h2>Results</h2>
                 </div>
             </div>
         </div>
