@@ -135,6 +135,7 @@
                 </div>
                  <div class="col-xs-6">
                     <img src="img/geovis/ucd.png" height="300" width="450" style="margin-top:100px"></img>
+                    <p style="text-align:center"><b>Figure 1: User Centred Design Approach from Wassink et al., 2009</b></p>
                  </div>
             </div>
         </div>
@@ -143,16 +144,26 @@
     <section id="vis1" class="initial-section">
         <div class="container">
             <div class="row">
-                <h2>Initial Visualisation Design</h2>
-                <div class="col-xs-6 .col-md-4">
+                <div class="col-xs-6">
+                    <h2>Initial Visualisation Design</h2>
+                    <p>An interactive prototype (Figure 2) with limited functionality was produced using the Google Maps Javascript API v3 and a small sample of traceroute data collected from the Ripe Atlas platform. The MaxMind GeoLite City Database was used to map IP addresses to coordinates on a city level and used to position markers on the map for both probes and destination IP addresses. 
+                    </p>
 
+                    <h4>Map Symbols</h4>
+                        <ul>
+                        <li>Destination IPs: <font color="blue">Blue</font> Circles</li>
+                            <li>NREN Probes: <font color="red">Red</font> Markers</li> 
+                            <li>University Probes: <font color="magenta">Purple</font> Markers</li>
+                            <li>Traceroute: Line with animated arrow joining destination IP icon and probes</li>
+                            <li>Undersea fibre cables: Coloured lines around Africa where thickness of line represents capacity (GB)</li>
+                        </ul>
+
+                    <p>An informal user feedback evaluation was conducted with the expert user group to get feedback on the visualisation. Users had differing opinions on the undersea fibre overlay surrounding Africa: one user thought the multiple lines and colours in the overlay added too much noise to the visualisation and should be removed while another thought it was useful to perhaps reason which cable was taken by the traceroute to the destination. </p>
 
                 </div>
-                <div class="col-xs-6 .col-md-4">
-
-                </div>
-                <div class="col-xs-6 .col-md-4">
-
+                <div class="col-xs-6">
+                    <img src="img/geovis/vis1.png" height="380" width="550" style="margin-top:100px"></img>
+                    <p style="text-align:center"><b>Figure 2: Screenshot of Initial Interactive Prototype</b></p>
                 </div>
             </div>
         </div>

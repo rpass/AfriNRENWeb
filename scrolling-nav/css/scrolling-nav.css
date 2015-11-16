@@ -46,8 +46,8 @@ of those sections to manage the look and feel of the site. */
 }
 
 .initial-section {
-    height: 100%;
-    padding-top: 150px;
+    height: 65%;
+    padding-top: 30px;
     text-align: justify;
     background: #fff;
 }
