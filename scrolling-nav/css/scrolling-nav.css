@@ -36,8 +36,8 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 150px;
 =======
-/*    height: 100%;
-*/    padding-top: 150px;
+    height: 100%;
+    padding-top: 150px;
 >>>>>>> 887e47189ded40d96f5b06b8796244e6cd8a5432
     text-align: justify;
     background: #fff;
@@ -47,7 +47,7 @@ of those sections to manage the look and feel of the site. */
 <<<<<<< HEAD
     height: 100%;
 =======
-/*    height: 100%;*/
+    height: 100%;
 >>>>>>> 887e47189ded40d96f5b06b8796244e6cd8a5432
     padding-top: 150px;
     text-align: justify;
@@ -73,9 +73,9 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     background: #eee;
 =======
-/*    height: 100%;
-*/    padding-top: 150px;
-    text-align: justify;
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
     background: #eee;
 }
 
