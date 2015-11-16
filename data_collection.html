@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>AfriNREN - Data Collection</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="scrolling-nav_rosy/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="scrolling-nav_rosy/css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Data Collection</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Overview</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Results</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Report PDF</a>
+                    </li>
+                </ul>
+                <ul class = "nav navbar-nav navbar-right">
+                    <li><a href = "index.html"><strong>Home</strong></a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Topology Discovery for African NRENs</h1>
+                    <p>A National and Research and Education Network (NREN) is a mesh of interconnected networks that support the needs of education and research communities in a country. The UbuntuNet Alliance is an association of NRENs in Southern and Eastern Africa.
+                    NRENs aim to reduce latencies between educational institutions in order to facilitate better research and communication. However, it has been found that about 75% of the Internet traffic between NRENs in Africa is routed outside the continent resulting in high latencies.</p>
+
+                    <p>There is a need for a platform which collects and displays accurate data about NREN topologies in Africa. This platform will help future researchers to see which networks exchange data circuitously and evaluate how and where networks can be improved. It will also add to the discussion and argument for why more local peering could be beneficial to African networks.</p>
+
+                    <p>The paper below aims to find out: <p align="center"><strong>Can Traceroute data be collected reliably and efficiently for the purpose of discovering the topology of African NRENs?</strong></p> By “reliably”, it is meant to increase the accuracy of these measurements and ensure that the topology discovered is complete. A topology is complete if all the paths defining that topology have been found. By “efficiently”, it is meant to reduce the number of measurements to perform for obtaining a complete topology. </p>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Overview</h1>
+                    <div class="col-md-8">
+                        <p>Using the RIPE Atlas platform, Traceroute measurements were conducted from 12 vantage points to 50 destination IP addresses within the UbuntuNet Alliance as displayed in Figure 1. Probes are represented by blue diamonds while destinations are represented by circles. The protocols ICMP, TCP and UDP were used. Since some protocols are blocked by firewalls on routers, all three protocols were used to discover the most complete topology.</p>
+                        <p>The experiment was initially run three times in an attempt to find as many paths as possible from each source to each destination. Routing and load balancing can provide a diverse set of paths depending on the congestion of the network and how packets were subsequently routed at a particular time, which is why the experiment was run more than once. Three full measurements were conducted from each probe to each target IP address using each of the three protocols. The paths of these measurements were analysed to find overlaps. Once this had been completed, three more sets of Traceroute measurements were run for each protocol where first hops and last hops were changed where necessary.</p>
+                        <p>A summary of the main findings are presented below. For a full discussion of these results, please consult the full report at the bottom of this page.</p>
+                    </div>
+                    <div class = "col-md-4">
+                        <figure>
+                            <img src="img/src_dest.PNG">
+                            <figcaption><strong>Figure 1.</strong> Visualisation of probes and destinations for Traceroute measurements</figcaption>
+                        </figure>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Results</h1>
+                    <h3>Destinations reached</h3>
+                    <div class = "col-md-8"> 
+                        <p>As seen in Figure 2 to the right, out of the three protocols, measurements configured with TCP reached the destination most often. This clearly indicates that measurements configured with TCP had the highest reachability in terms of number of measurements which reached a destination</p>
+                        <p>Out of the fifty target destinations that were probed, all of the destinations were reached by at least one probe. TCP-based measurements reached all of the destinations</p>
+                    </div>
+                    <div class = "col-md-4">
+                        <figure>
+                            <img src="img/dest_reached_graph.PNG">
+                            <figcaption><strong>Figure 2.</strong> Graph showing spread of measurements that reached their destination by protocol as a percentage of all measurements</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class="col-lg-12">
+                    <h3>Path Diversity</h3>
+                    <div class = "col-md-6"> 
+                        <p>When there is more than one unique path from a source to a destination, there is path diversity. Path diversity can be expressed as the average number of unique paths between a source and a destination.</p>
+                        <p>As can be seen in Figure 3 to the right, the average path diversity for TCP-based measurements is the lowest at about 1.7. ICMP-based measurements have the next highest path diversity at almost 2. UDP-based measurements have the highest path diversity at about 2.4.</p>
+                        <p>It is also interesting to note that there is an increase in path discovery when new protocols are added. As seen in Figure 4 to the far right, there is an overlap in unique paths between the three protocols.</p>
+                        <p>UDP-based measurements revealed the most unique paths. UDP-based measurements have the highest path diversity as well as the highest number of unique paths.</p>
+                        <p>With respect to efficiency, on comparing the number of hops for full measurements and partial measurements, it was found that there was an average reduction of ten hops after modifying the first and/or last hop in the Traceroute measurement. There was therefore a reduction in probe packets.</p>
+                    </div>
+                    <div class = "col-md-3">
+                        <figure>
+                            <img src="img/path_diversity_cdf.PNG">
+                            <figcaption><strong>Figure 3.</strong> Cumulative Distribution Frequency graphs for number of unique paths per protocol</figcaption>
+                        </figure>
+                    </div>
+                    <div class = "col-md-3">
+                        <figure>
+                            <img src="img/path_diversity_venn.PNG">
+                            <figcaption><strong>Figure 4.</strong> Venn diagram showing the overlap in the number of unique paths per protocol</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class ="row">
+                <div class="col-lg-12">
+                    <h3>Latencies</h3> 
+                    <div class = "col-md-6"> 
+                        <p>When comparing Figures 5 and 6, it can be seen that the curves follow a similar trend. This indicates that the alterations in the Traceroute measurements did not have a significant effect on the results.</p>
+                    </div>
+                    <div class = "col-md-3">
+                        <figure>
+                            <img src="img/latencies_full.PNG">
+                            <figcaption><strong>Figure 5.</strong> Cumulative Distribution Frequency graph showing distribution of latencies per protocol for full measurements</figcaption>
+                        </figure>
+                    </div>
+                    <div class = "col-md-3">
+                        <figure>
+                            <img src="img/latencies_partial.PNG">
+                            <figcaption><strong>Figure 6.</strong> Cumulative Distribution Frequency graphs showing distribution of latencies for partial measurements where first and/or last hops were altered</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Full Report and Literature Review</h1>
+
+                    <div class="col-xs-6 col-sm-6 portfolio-item">
+                        <a href="documents/final_papers/Rosy_Final_Paper.pdf" class="portfolio-link">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/doc_prev/paper_rosy.png" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Final Project Paper - Roslyn Sanby</h4>
+                            <p class="text-muted">Topology Discovery for African NRENs</p>
+                        </div>
+                    </div>
+                    <!-- Rosy Lit Review -->
+                   <div class="col-xs-6 col-sm-6 portfolio-item">
+                        <a href="documents/lit_review/LiteratureReview_snbros001.pdf" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/doc_prev/lit_rev_rosy.png" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Literature Review - Roslyn Sanby</h4>
+                            <p class="text-muted">Analysing and Visualising National Research and Education Networks in Africa: A Literature Review</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
