@@ -39,44 +39,44 @@ of those sections to manage the look and feel of the site. */
 }
 
 .approach-section {
-    height: 60%;
-    padding-top: 30px;
+    height: 70%;
+    padding-top: 100px;
     text-align: justify;
     background: #eee;
 }
 
 .initial-section {
-    height: 65%;
-    padding-top: 30px;
+    height: 70%;
+    padding-top: 100px;
     text-align: justify;
     background: #fff;
 }
 
 
 .visualisation-section {
-    height: 1200px;
-    padding-top: 40px;
+    height: 1250px;
+    padding-top: 100px;
     text-align: justify;
     background: #eee;
 }
 
 .evaluation-section {
     height: 90%;
-    padding-top: 40px;
+    padding-top: 100px;
     text-align: justify;
     background: #fff;
 }
 
 .results-section {
-    height:1100px;
-    padding-top: 50px;
+    height:1150px;
+    padding-top: 100px;
     text-align: justify;
     background: #eee;
 
 }
 .download-section {
-    height: 50%;
-    padding-top: 150px;
+    height: 30%;
+    padding-top: 100px;
     text-align: justify;
     background: #fff;
 
