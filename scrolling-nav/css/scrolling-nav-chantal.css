@@ -32,21 +32,21 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
-    height: 80%;
+    height: 800px;
     padding-top: 150px;
     text-align: justify;
     background: #fff;
 }
 
 .approach-section {
-    height: 70%;
+    height: 600px;
     padding-top: 100px;
     text-align: justify;
     background: #eee;
 }
 
 .initial-section {
-    height: 70%;
+    height: 600px;
     padding-top: 100px;
     text-align: justify;
     background: #fff;
@@ -61,7 +61,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 .evaluation-section {
-    height: 90%;
+    height: 900px;
     padding-top: 100px;
     text-align: justify;
     background: #fff;
